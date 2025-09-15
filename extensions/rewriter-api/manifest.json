@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "Gemini Nano Rewriter API Demo",
+  "version": "1.0.0",
+  "description": "Demonstrates Gemini Nano Rewriter API for content rewriting",
+  "permissions": [
+    "storage",
+    "activeTab"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Gemini Nano Rewriter API"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ]
+}

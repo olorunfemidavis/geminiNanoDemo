@@ -1,0 +1,14 @@
+{
+  "name": "gemini-nano-demo",
+  "version": "1.0.0",
+  "description": "Chrome extensions demonstrating Gemini Nano AI APIs",
+  "scripts": {
+    "build": "echo 'Extensions ready for Chrome'",
+    "test": "echo 'Manual testing required in Chrome'"
+  },
+  "keywords": ["chrome-extension", "gemini-nano", "ai", "demo"],
+  "author": "Gemini Nano Demo",
+  "license": "MIT",
+  "devDependencies": {},
+  "dependencies": {}
+}

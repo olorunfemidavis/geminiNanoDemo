@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "Gemini Nano Language Detector API Demo",
+  "version": "1.0.0",
+  "description": "Demonstrates Gemini Nano Language Detector API for language identification",
+  "permissions": [
+    "storage",
+    "activeTab"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Gemini Nano Language Detector API"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ]
+}
