@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="summarizer.css">
+</head>
+<body>
+    <div class="container">
+        <h3>Gemini Nano Summarizer API Demo</h3>
+        <div class="controls">
+            <button id="sampleArticleBtn">Sample Article</button>
+            <button id="sampleResearchBtn">Sample Research</button>
+            <button id="summarizePageBtn">Summarize Current Page</button>
+        </div>
+        <textarea id="textToSummarize" class="input-area" placeholder="Paste or type text to summarize..."></textarea>
+        <div class="controls">
+            <label for="summaryType">Type:</label>
+            <select id="summaryType">
+                <option value="key-points">Key Points (bulleted)</option>
+                <option value="tldr">TL;DR (short summary)</option>
+                <option value="teaser">Teaser</option>
+                <option value="headline">Headline</option>
+            </select>
+            <label for="summaryLength">Length:</label>
+            <select id="summaryLength">
+                <option value="short">Short</option>
+                <option value="medium">Medium</option>
+                <option value="long">Long</option>
+            </select>
+        </div>
+        <textarea id="result" class="output-area" readonly></textarea>
+        <button id="summarizeBtn">Generate Summary</button>
+        <div id="status" class="status"></div>
+    </div>
+    <script src="summarizer.js"></script>
+</body>
+</html>
