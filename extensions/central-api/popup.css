@@ -23,7 +23,8 @@ body {
 .container {
   display: flex;
   height: 600px;
-  width: 900px;
+  width: 100%;
+  max-width: 1000px;
 }
 .tabs {
   width: 180px;
