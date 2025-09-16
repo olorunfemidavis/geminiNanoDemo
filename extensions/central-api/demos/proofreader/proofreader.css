@@ -1,17 +1,18 @@
 /* Proofreader Demo Styles */
 body {
-  width: 500px;
   padding: 20px;
   font-family: Arial, sans-serif;
   background: var(--background-light);
   color: var(--text-light);
 }
-.proofreader-container {
+.proofreader-container, .container {
   display: flex;
   flex-direction: column;
   align-items: stretch;
   padding: 16px;
   font-family: Arial, sans-serif;
+  max-width: 700px;
+  margin: auto;
 }
 .proofreader-container h2 {
   margin-bottom: 12px;
@@ -42,11 +43,6 @@ body {
   padding: 8px;
   min-height: 40px;
   font-size: 0.95em;
-}
-.container {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
 }
 textarea {
   width: 100%;
