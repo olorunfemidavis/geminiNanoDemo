@@ -1,0 +1,41 @@
+{
+  "manifest_version": 3,
+  "name": "Gemini Nano Central API Demo",
+  "version": "1.0.0",
+  "description": "Unified demo extension for all Gemini Nano APIs.",
+  "permissions": [
+    "storage",
+    "activeTab",
+    "clipboardWrite",
+    "contextMenus"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "action": {
+    "default_title": "Gemini Nano Central API Demo"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": [
+        "demos/prompt/content.js",
+        "demos/summarizer/content.js",
+        "demos/writer/content.js",
+        "demos/translator/content.js",
+        "demos/rewriter/content.js",
+        "demos/proofreader/content.js",
+        "demos/language-detector/content.js"
+      ]
+    }
+  ],
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}

@@ -1,0 +1,32 @@
+/* Shared dark/light theme CSS for all modules */
+:root {
+  --background-light: #fff;
+  --background-dark: #181818;
+  --text-light: #222;
+  --text-dark: #eee;
+  --border-light: #ccc;
+  --border-dark: #333;
+  --table-header-light: #f5f5f5;
+  --table-header-dark: #232323;
+  --row-even-light: #f9f9f9;
+  --row-even-dark: #202020;
+  --status-available-light: #e0ffe0;
+  --status-available-dark: #204020;
+  --status-downloadable-light: #fffbe0;
+  --status-downloadable-dark: #403a20;
+  --status-downloading-light: #e0f0ff;
+  --status-downloading-dark: #203040;
+  --status-unavailable-light: #ffe0e0;
+  --status-unavailable-dark: #402020;
+}
+body {
+  background: var(--background-light);
+  color: var(--text-light);
+}
+@media (prefers-color-scheme: dark) {
+  body {
+    background: var(--background-dark);
+    color: var(--text-dark);
+  }
+}
+/* Add more shared styles as needed for buttons, tables, etc. */

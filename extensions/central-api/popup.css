@@ -1,0 +1,100 @@
+:root {
+  --background-light: #f8f9fa;
+  --background-dark: #181818;
+  --text-light: #222;
+  --text-dark: #eee;
+  --tabs-bg-light: #fff;
+  --tabs-bg-dark: #232323;
+  --border-light: #ddd;
+  --border-dark: #333;
+  --tab-active-bg-light: #e8f0fe;
+  --tab-active-bg-dark: #232f3e;
+  --tab-active-text-light: #1967d2;
+  --tab-active-text-dark: #90caf9;
+  --tab-text-light: #333;
+  --tab-text-dark: #eee;
+}
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: var(--background-light);
+  color: var(--text-light);
+}
+.container {
+  display: flex;
+  height: 600px;
+  width: 900px;
+}
+.tabs {
+  width: 180px;
+  background: var(--tabs-bg-light);
+  border-right: 1px solid var(--border-light);
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+}
+.tab {
+  padding: 16px 20px;
+  cursor: pointer;
+  border: none;
+  background: none;
+  text-align: left;
+  font-size: 16px;
+  color: var(--tab-text-light);
+  border-bottom: 1px solid #eee;
+  transition: background 0.2s;
+}
+.tab.active {
+  background: var(--tab-active-bg-light);
+  color: var(--tab-active-text-light);
+  font-weight: bold;
+}
+.content {
+  flex: 1;
+  padding: 0;
+  overflow: auto;
+  background: var(--background-light);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+iframe {
+  border: none;
+  width: 100%;
+  height: 100%;
+  background: var(--background-light);
+}
+.footer {
+  text-align: center;
+  padding: 16px 0 8px 0;
+  font-size: 15px;
+  color: var(--text-light);
+  background: transparent;
+}
+@media (prefers-color-scheme: dark) {
+  body {
+    background: var(--background-dark);
+    color: var(--text-dark);
+  }
+  .tabs {
+    background: var(--tabs-bg-dark);
+    border-right: 1px solid var(--border-dark);
+  }
+  .tab {
+    color: var(--tab-text-dark);
+    border-bottom: 1px solid var(--border-dark);
+  }
+  .tab.active {
+    background: var(--tab-active-bg-dark);
+    color: var(--tab-active-text-dark);
+  }
+  .content {
+    background: var(--background-dark);
+  }
+  iframe {
+    background: var(--background-dark);
+  }
+  .footer {
+    color: var(--text-dark);
+  }
+}

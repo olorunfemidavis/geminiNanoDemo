@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Gemini Nano API Setup & Availability</title>
+  <link rel="stylesheet" href="setup.css">
+  <link rel="stylesheet" href="../shared/theme.css">
+</head>
+<body>
+  <div class="setup-container">
+    <h2>Gemini Nano API Setup & Availability</h2>
+    <table class="api-table" id="apiTable">
+      <thead>
+        <tr>
+          <th>API</th>
+          <th>Status</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Prompt API</td><td><span class="api-status" id="promptStatus">Checking...</span></td><td><button class="download-btn" id="promptDownload" style="display:none;">Download</button></td></tr>
+        <tr><td>Summarizer API</td><td><span class="api-status" id="summarizerStatus">Checking...</span></td><td><button class="download-btn" id="summarizerDownload" style="display:none;">Download</button></td></tr>
+        <tr><td>Writer API</td><td><span class="api-status" id="writerStatus">Checking...</span></td><td><button class="download-btn" id="writerDownload" style="display:none;">Download</button></td></tr>
+        <tr><td>Translator API</td><td><span class="api-status" id="translatorStatus">Checking...</span></td><td><button class="download-btn" id="translatorDownload" style="display:none;">Download</button></td></tr>
+        <tr><td>Rewriter API</td><td><span class="api-status" id="rewriterStatus">Checking...</span></td><td><button class="download-btn" id="rewriterDownload" style="display:none;">Download</button></td></tr>
+        <tr><td>Proofreader API</td><td><span class="api-status" id="proofreaderStatus">Checking...</span></td><td><button class="download-btn" id="proofreaderDownload" style="display:none;">Download</button></td></tr>
+        <tr><td>Language Detector API</td><td><span class="api-status" id="languageDetectorStatus">Checking...</span></td><td><button class="download-btn" id="languageDetectorDownload" style="display:none;">Download</button></td></tr>
+      </tbody>
+    </table>
+    <div id="setupDetails"></div>
+  </div>
+  <script src="setup.js"></script>
+</body>
+</html>

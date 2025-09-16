@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="rewriter.css">
+    <link rel="stylesheet" href="../shared/theme.css">
+</head>
+<body>
+    <div class="container">
+        <h3>Gemini Nano Rewriter API Demo</h3>
+        <div>
+            <label for="originalText">Original Text:</label>
+            <textarea id="originalText" class="input-area" placeholder="Enter text you want to rewrite...">The weather today is really nice and pleasant. I think it would be a good day to go outside and enjoy the sunshine.</textarea>
+        </div>
+        <div class="controls">
+            <label for="tone">Rewrite Tone:</label>
+            <select id="tone">
+                <option value="as-is">As-is</option>
+                <option value="more-formal">More Formal</option>
+                <option value="more-casual">More Casual</option>
+            </select>
+            <label for="length">Length:</label>
+            <select id="length">
+                <option value="as-is">As-is</option>
+                <option value="shorter">Shorter</option>
+                <option value="longer">Longer</option>
+            </select>
+        </div>
+        <div class="quick-actions">
+            <button id="sampleEmailBtn" class="quick-btn">Sample Email</button>
+            <button id="sampleParagraphBtn" class="quick-btn">Sample Paragraph</button>
+            <button id="sampleSocialBtn" class="quick-btn">Social Post</button>
+        </div>
+        <button id="rewriteBtn">Rewrite Text</button>
+        <div>
+            <label for="result">Rewritten Text:</label>
+            <textarea id="result" class="output-area" readonly placeholder="Rewritten text will appear here..."></textarea>
+        </div>
+        <div id="status" class="status"></div>
+    </div>
+    <script src="rewriter.js"></script>
+</body>
+</html>

@@ -1,0 +1,140 @@
+/* Gemini Nano API Setup & Availability CSS */
+:root {
+  --background-light: #fff;
+  --background-dark: #181818;
+  --text-light: #222;
+  --text-dark: #eee;
+  --border-light: #ccc;
+  --border-dark: #333;
+  --table-header-light: #f5f5f5;
+  --table-header-dark: #232323;
+  --row-even-light: #f9f9f9;
+  --row-even-dark: #202020;
+  --status-available-light: #e0ffe0;
+  --status-available-dark: #204020;
+  --status-downloadable-light: #fffbe0;
+  --status-downloadable-dark: #403a20;
+  --status-downloading-light: #e0f0ff;
+  --status-downloading-dark: #203040;
+  --status-unavailable-light: #ffe0e0;
+  --status-unavailable-dark: #402020;
+}
+
+body {
+  background: var(--background-light);
+  color: var(--text-light);
+}
+.setup-container {
+  padding: 32px;
+  font-family: Arial, sans-serif;
+  background: var(--background-light);
+  max-width: 700px;
+  margin: auto;
+}
+h2 {
+  margin-bottom: 24px;
+  color: #1967d2;
+}
+.api-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 24px 0;
+}
+.api-list li {
+  margin-bottom: 18px;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+}
+.api-status {
+  margin-left: 16px;
+  font-weight: bold;
+  padding: 4px 12px;
+  border-radius: 6px;
+  font-size: 15px;
+}
+.available { background: #e8f5e9; color: #388e3c; }
+.downloadable { background: #fffde7; color: #fbc02d; }
+.downloading { background: #e3f2fd; color: #1976d2; }
+.unavailable { background: #ffebee; color: #d32f2f; }
+.progress { font-size: 13px; margin-left: 8px; color: #555; }
+.api-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1em;
+}
+.api-table th, .api-table td {
+  border: 1px solid var(--border-light);
+  padding: 12px 16px;
+  text-align: left;
+}
+.api-table th {
+  background: var(--table-header-light);
+  font-weight: 600;
+}
+.api-table tr {
+  background: var(--background-light);
+}
+.api-table tr:nth-child(even) {
+  background: var(--row-even-light);
+}
+.api-table td {
+  min-width: 120px;
+}
+.download-btn {
+  padding: 6px 16px;
+  border-radius: 4px;
+  border: 1px solid #888;
+  background: #e7e7e7;
+  cursor: pointer;
+  font-size: 1em;
+}
+.download-btn:active {
+  background: #d0d0d0;
+}
+.api-status {
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-weight: 500;
+}
+.available { background: var(--status-available-light); color: #2a7a2a; border: 1px solid #b2e5b2; }
+.downloadable { background: var(--status-downloadable-light); color: #a67c00; border: 1px solid #e5dcb2; }
+.downloading { background: var(--status-downloading-light); color: #005a9c; border: 1px solid #b2cbe5; }
+.unavailable { background: var(--status-unavailable-light); color: #a72a2a; border: 1px solid #e5b2b2; }
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background: var(--background-dark);
+    color: var(--text-dark);
+  }
+  .setup-container {
+    background: var(--background-dark);
+  }
+  h2 {
+    color: #90caf9;
+  }
+  .api-table th, .api-table td {
+    border: 1px solid var(--border-dark);
+  }
+  .api-table th {
+    background: var(--table-header-dark);
+  }
+  .api-table tr:nth-child(even) {
+    background: var(--row-even-dark);
+  }
+  .api-table tr {
+    background: var(--background-dark);
+  }
+  .api-status.available { background: var(--status-available-dark); color: #a2e5a2; border: 1px solid #204020; }
+  .api-status.downloadable { background: var(--status-downloadable-dark); color: #ffe7a2; border: 1px solid #403a20; }
+  .api-status.downloading { background: var(--status-downloading-dark); color: #a2cbe5; border: 1px solid #203040; }
+  .api-status.unavailable { background: var(--status-unavailable-dark); color: #e5a2a2; border: 1px solid #402020; }
+  .download-btn {
+    background: #232323;
+    color: #eee;
+    border: 1px solid #444;
+  }
+  .download-btn:active {
+    background: #181818;
+  }
+}

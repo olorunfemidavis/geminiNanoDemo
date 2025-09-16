@@ -1,0 +1,53 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    resize: vertical;
+}
+.input-area {
+    height: 120px;
+}
+button {
+    padding: 10px 20px;
+    background-color: #4285f4;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #3367d6;
+}
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+.result-container {
+    background-color: var(--background-light);
+    color: var(--text-light);
+}
+@media (prefers-color-scheme: dark) {
+    .result-container {
+        background-color: var(--background-dark);
+        color: var(--text-dark);
+    }
+}
+.detected-language {
+    font-size: 18px;
+    font-weight: bold;
+}
+.status {
+    font-size: 12px;
+    color: #666;
+    margin-top: 5px;
+}
+.status.error {
+    color: #d93025;
+    background-color: #fce8e6;
+}

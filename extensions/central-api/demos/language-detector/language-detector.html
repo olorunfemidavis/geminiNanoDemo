@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="language-detector.css">
+    <link rel="stylesheet" href="../shared/theme.css">
+</head>
+<body>
+    <div class="container">
+        <h3>Gemini Nano Language Detector API Demo</h3>
+        <div class="controls">
+            <button id="sampleFrenchBtn">Sample French</button>
+            <button id="sampleSpanishBtn">Sample Spanish</button>
+            <button id="sampleGermanBtn">Sample German</button>
+            <button id="sampleJapaneseBtn">Sample Japanese</button>
+            <button id="sampleMixedBtn">Mixed Languages</button>
+            <button id="detectPageLanguageBtn">Detect Page Language</button>
+        </div>
+        <textarea id="textToDetect" class="input-area" placeholder="Enter text to detect language..."></textarea>
+        <div class="result-container">
+            <div id="result"></div>
+            <div id="detectedLanguage" class="detected-language"></div>
+        </div>
+        <button id="detectBtn">Detect Language</button>
+        <div id="status" class="status"></div>
+    </div>
+    <script src="language-detector.js"></script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="translator.css">
+    <link rel="stylesheet" href="../shared/theme.css">
+</head>
+<body>
+    <div class="container">
+        <h3>Gemini Nano Translator API Demo</h3>
+        <div class="controls">
+            <label for="sourceLanguage">Source:</label>
+            <select id="sourceLanguage"></select>
+            <button id="swapBtn">Swap</button>
+            <label for="targetLanguage">Target:</label>
+            <select id="targetLanguage"></select>
+        </div>
+        <div class="controls">
+            <button id="sampleGreetingBtn">Greeting</button>
+            <button id="sampleBusinessBtn">Business</button>
+            <button id="sampleTravelBtn">Travel</button>
+            <button id="sampleTechnicalBtn">Technical</button>
+        </div>
+        <textarea id="sourceText" class="input-area" placeholder="Enter text to translate..."></textarea>
+        <textarea id="result" class="output-area" readonly></textarea>
+        <button id="translateBtn">Translate</button>
+        <div id="detectedLang"></div>
+        <div id="status" class="status"></div>
+    </div>
+    <script src="translator.js"></script>
+</body>
+</html>
