@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded', function() {
   const tabs = document.querySelectorAll('.tab');
   const demoFrame = document.getElementById('demoFrame');
   const demoMap = {
+    'setup': 'demos/setup/setup.html',
     'prompt': 'demos/prompt/prompt.html',
     'summarizer': 'demos/summarizer/summarizer.html',
     'writer': 'demos/writer/writer.html',

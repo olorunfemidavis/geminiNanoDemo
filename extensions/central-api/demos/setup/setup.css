@@ -1,0 +1,78 @@
+/* Gemini Nano API Setup & Availability CSS */
+.setup-container {
+  padding: 32px;
+  font-family: Arial, sans-serif;
+  background: #f8f9fa;
+  max-width: 700px;
+  margin: auto;
+}
+h2 {
+  margin-bottom: 24px;
+  color: #1967d2;
+}
+.api-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 24px 0;
+}
+.api-list li {
+  margin-bottom: 18px;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+}
+.api-status {
+  margin-left: 16px;
+  font-weight: bold;
+  padding: 4px 12px;
+  border-radius: 6px;
+  font-size: 15px;
+}
+.available { background: #e8f5e9; color: #388e3c; }
+.downloadable { background: #fffde7; color: #fbc02d; }
+.downloading { background: #e3f2fd; color: #1976d2; }
+.unavailable { background: #ffebee; color: #d32f2f; }
+.progress { font-size: 13px; margin-left: 8px; color: #555; }
+.api-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1em;
+}
+.api-table th, .api-table td {
+  border: 1px solid #ccc;
+  padding: 12px 16px;
+  text-align: left;
+}
+.api-table th {
+  background: #f5f5f5;
+  font-weight: 600;
+}
+.api-table tr {
+  background: #fff;
+}
+.api-table tr:nth-child(even) {
+  background: #f9f9f9;
+}
+.api-table td {
+  min-width: 120px;
+}
+.download-btn {
+  padding: 6px 16px;
+  border-radius: 4px;
+  border: 1px solid #888;
+  background: #e7e7e7;
+  cursor: pointer;
+  font-size: 1em;
+}
+.download-btn:active {
+  background: #d0d0d0;
+}
+.api-status {
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-weight: 500;
+}
+.available { background: #e0ffe0; color: #2a7a2a; border: 1px solid #b2e5b2; }
+.downloadable { background: #fffbe0; color: #a67c00; border: 1px solid #e5dcb2; }
+.downloading { background: #e0f0ff; color: #005a9c; border: 1px solid #b2cbe5; }
+.unavailable { background: #ffe0e0; color: #a72a2a; border: 1px solid #e5b2b2; }
