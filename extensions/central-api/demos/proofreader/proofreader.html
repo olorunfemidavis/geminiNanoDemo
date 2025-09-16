@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8">
     <title>Gemini Nano Proofreader API Demo</title>
     <link rel="stylesheet" href="proofreader.css">
     <link rel="stylesheet" href="../shared/theme.css">
 </head>
+
 <body>
     <div class="container">
         <h3>Gemini Nano Proofreader API Demo</h3>
@@ -14,8 +16,11 @@
             <button id="sampleEssayBtn">Sample Essay</button>
             <button id="sampleBusinessBtn">Sample Business</button>
         </div>
+        <br />
         <textarea id="textToProofread" class="input-area" placeholder="Enter text to proofread..."></textarea>
+        <br />
         <textarea id="result" class="output-area" readonly></textarea>
+        <br />
         <button id="proofreadBtn">Proofread Text</button>
         <div id="status" class="status"></div>
         <div id="corrections" style="display:none;">
@@ -25,4 +30,5 @@
     </div>
     <script src="proofreader.js"></script>
 </body>
+
 </html>
