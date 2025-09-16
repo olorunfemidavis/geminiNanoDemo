@@ -1,6 +1,5 @@
-/* Removed theme logic. Only module-specific styles remain. */
 body {
-    width: 500px;
+    width: 400px;
     padding: 20px;
     font-family: Arial, sans-serif;
     background: var(--background-light);
@@ -13,23 +12,13 @@ body {
 }
 textarea {
     width: 100%;
+    height: 80px;
     padding: 10px;
     border: 1px solid #ddd;
     border-radius: 4px;
     resize: vertical;
-}
-.input-area {
-    height: 150px;
-}
-.output-area {
-    height: 120px;
-    background-color: var(--background-light);
+    background: var(--background-light);
     color: var(--text-light);
-}
-select {
-    padding: 8px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
 }
 button {
     padding: 10px 20px;
@@ -46,27 +35,36 @@ button:disabled {
     background-color: #ccc;
     cursor: not-allowed;
 }
-.controls {
-    display: flex;
-    gap: 10px;
-    align-items: center;
+.result {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #f8f9fa;
+    border-radius: 4px;
+    min-height: 100px;
+    white-space: pre-wrap;
+    color: var(--text-light);
+}
+.error {
+    color: #d93025;
+    background-color: #fce8e6;
 }
 .status {
     font-size: 12px;
     color: #666;
     margin-top: 5px;
 }
-.status.error {
-    color: #d93025;
-    background-color: #fce8e6;
-}
 @media (prefers-color-scheme: dark) {
     body {
         background: var(--background-dark);
         color: var(--text-dark);
     }
-    .output-area {
-        background-color: var(--background-dark);
+    textarea {
+        background: var(--background-dark);
+        color: var(--text-dark);
+        border: 1px solid #333;
+    }
+    .result {
+        background-color: #232323;
         color: var(--text-dark);
     }
 }

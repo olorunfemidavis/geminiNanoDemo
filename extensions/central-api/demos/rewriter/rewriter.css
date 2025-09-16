@@ -1,8 +1,3 @@
-body {
-    width: 500px;
-    padding: 20px;
-    font-family: Arial, sans-serif;
-}
 .container {
     display: flex;
     flex-direction: column;
@@ -20,7 +15,14 @@ textarea {
 }
 .output-area {
     height: 120px;
-    background-color: #f8f9fa;
+    background-color: var(--background-light);
+    color: var(--text-light);
+}
+@media (prefers-color-scheme: dark) {
+    .output-area {
+        background-color: var(--background-dark);
+        color: var(--text-dark);
+    }
 }
 select {
     padding: 8px;
